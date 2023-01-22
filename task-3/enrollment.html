@@ -1,0 +1,67 @@
+<html>
+<head>
+    <h1 align="center" bgcolor="#000000">ENROLLMENT FORM</h1>
+<script>
+function display()
+{
+document.getElementById("displayarea").innerHTML = document.getElementById("fname").value; 
+document.getElementById("fname").value = "";
+document.getElementById("displayarea1").innerHTML = document.getElementById("lname").value; 
+document.getElementById("lname").value = "";
+document.getElementById("displayarea2").innerHTML = document.getElementById("email").value; 
+document.getElementById("email").value = "";
+document.getElementById("displayarea3").innerHTML = document.getElementById("phone").value; 
+document.getElementById("phone").value = "";
+document.getElementById("displayarea4").innerHTML = document.getElementById("course").value; 
+document.getElementById("course").value = "";
+
+}
+</script>
+</head>
+
+<body>
+<table bgcolor="#ffb6c1" border="1" align="center">
+<tr>
+<td>FirstName</td>
+<td><input type="text" name="fname" id="fname"></td>
+</tr>
+<tr>
+<td>LastName</td>
+<td><input type="text" name=lname" id="lname"></td>
+</tr>
+<tr>
+<td>Email</td>
+<td><input type="text" name=email" id="email"></td>
+</tr>
+<tr>
+<td>Phone</td>
+<td><input type="text" name=phone" id="phone"></td>
+</tr>
+<td>Course</td>
+<td><input type="text" name=course" id="course"></td>
+</tr>
+ 
+<tr>
+<td>&nbsp</td>
+<td align="center"><input type="button" value="Submit" name="submit" id="submit" onClick="display()"/></td>
+</tr>
+</table>
+<table width="500px" align="center" border=0> 
+
+<tr style="background-color: #FF69B4">
+<td align="center"><b>Fast Name</b></td>
+<td align="center"><b>Last Name</b></td>
+<td align="center"><b>Email</b></td>
+<td align="center"><b>Phone</b></td>
+<td align="center"><b>Course</b></td>
+</tr> 
+<tr>
+<td align="center"><div id="displayarea"></div></td>
+<td align="center"><div id="displayarea1"></div></td>
+<td align="center"><div id="displayarea2"></div></td>
+<td align="center"><div id="displayarea3"></div></td>
+<td align="center"><div id="displayarea4"></div></td> 
+</tr>
+</table>
+</body>
+</html> 
